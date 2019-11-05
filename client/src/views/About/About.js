@@ -1,19 +1,15 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
-import './Home.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
+import './About.css';
 
-function Home() {
+function About() {
     return (
         <div className="App">
             <header className="App-header">
-                A New Life Line
+                About
             </header>
-
-
         </div>
     );
 }
 
-export default Home;
+export default About;
