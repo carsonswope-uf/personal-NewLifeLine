@@ -1,3 +1,18 @@
+/* Styling for header nav logo, links, and profile icon */
+.topnav {
+  background-color: #F8EA5B;
+}
+.topnav-right {
+  display: inline;
+}
+.topnav-link{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.topnav-profile {
+  display: inline;
+}
+
 
 #wrapper {
     display: grid;
@@ -17,6 +32,8 @@
     flex-wrap: nowrap;
     width: 100%;
 }
+
+
 
 #homeBody {
     display: flex;
