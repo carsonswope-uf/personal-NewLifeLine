@@ -1,16 +1,16 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
 import '../../app.css';
-import './About.css';
+import './Donate.css';
 
-function About() {
+function Donate() {
     return (
         <div className="App">
             <header className="App-header">
-                About
+                Donate
             </header>
         </div>
     );
 }
 
-export default About;
+export default Donate;
