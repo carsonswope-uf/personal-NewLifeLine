@@ -1,16 +1,36 @@
 /* Styling for header nav logo, links, and profile icon */
 .topnav {
-  background-color: #F8EA5B;
+  background-color: #fff0a6;
 }
 .topnav-right {
   display: inline;
+  vertical-align: middle
 }
 .topnav-link{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #1a1708;
+  font-size: 24px;
+}
+.topnav-link:hover {
+  background-color: #fff5c4;
+  color: #1a1708;
 }
 .topnav-profile {
+  margin-top: 1%;
+  margin-right: 10px;
   display: inline;
+  vertical-align: middle;
+  float: right;
+
+}
+
+Link {
+  text-decoration: none;
 }
 
 

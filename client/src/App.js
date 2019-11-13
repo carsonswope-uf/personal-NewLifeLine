@@ -4,25 +4,38 @@ import Home from "./views/Home/Home"
 import About from "./views/About/About"
 import Forum from "./views/Forum/Forum"
 import Calendar from "./views/Calendar/Calendar"
+import Donate from "./views/Donate/Donate"
+import Profile from "./views/Profile/Profile"
 import NotFound from "./views/NotFound"
 import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
+import './app.css';
 
 
 const App = () => {
   return (
-    <div>
+    <div className='page-container'>
       <Header />
-      <Switch>
-        <Route exact path="/Home" component={Home} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Forum" component={Forum} />
-        <Route exact path="/Calendar" component={Calendar} />
-        <Route exact path="/">
-          <Redirect to="/Home" />
-        </Route>
-        <Route component={NotFound}/>
 
-      </Switch>
+      <div className='content-wrap'>
+        <Switch>
+          <Route exact path="/Home" component={Home} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Forum" component={Forum} />
+          <Route exact path="/Calendar" component={Calendar} />
+          <Route exact path="/Donate" component={Donate} />
+          <Route exact path="/Profile" component={Profile} />
+          <Route exact path="/">
+            <Redirect to="/Home" />
+          </Route>
+          <Route component={NotFound}/>
+
+        </Switch>
+      </div>
+
+      <div className='footer'>
+        <Footer />
+      </div>
     </div>
   );
 }
