@@ -99,7 +99,7 @@ router.post('/login', function(req,res){
             if (password === user.password){
                 res.send({message: 'Login'});
             } else {
-                res.send({message: 'REEEEEE'});
+                res.send({message: 'Incorrect Password'});
             }
         }
         
